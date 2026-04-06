@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduvational path</title>
+    <link rel="stylesheet" href="asstes/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--font googlegh-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+  </head>
+  <body>
+    <!-- start nav -->
+    <nav class="dark:bg-gray-700 bg-gray-300 fixed w-full z-[100]" style="box-shadow: 1px 3px 1px rgba(1, 32, 45, 0.263);">
+      <div class="max-w-5xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="asstes/images/logo.png" class="w-[70px] h-[70px] object-cover rounded-full" alt="Flowbite Logo" />
+        </a>
+        <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+          <button type="button" data-dropdown-toggle="language-dropdown-menu"
+            class="dark:text-gray-200 flex items-center text-heading bg-transparent hover:bg-neutral-secondary-medium hover:scale-110 ease-in-out font-medium leading-5 rounded-[10px] text-sm px-3 py-2 focus:outline-none">
+            <svg class="h-4 w-4 me-1.5" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.00023 16.5C13.1425 16.5 16.5005 13.1421 16.5005 9C16.5005 4.85786 13.1425 1.5 9.00023 1.5C4.85797 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85797 16.5 9.00023 16.5Z"
+                fill="white" />
+              <path d="M8.67548 8.99996H16.5012C16.5012 8.32308 16.4109 7.66735 16.2428 7.04358H8.67548V8.99996Z"
+                fill="#D80027" />
+              <path d="M8.67548 5.08712H15.4004C14.9413 4.338 14.3543 3.67585 13.6699 3.13074H8.67548V5.08712Z"
+                fill="#D80027" />
+              <path
+                d="M9.0005 16.5001C10.7655 16.5001 12.3878 15.89 13.6689 14.8698H4.33209C5.61318 15.89 7.23548 16.5001 9.0005 16.5001Z"
+                fill="#D80027" />
+              <path
+                d="M2.60125 12.9132H15.4C15.7686 12.3118 16.0545 11.6543 16.2425 10.9567H1.75879C1.94679 11.6543 2.23265 12.3118 2.60125 12.9132Z"
+                fill="#D80027" />
+              <path
+                d="M4.97397 2.67114H5.65741L5.0217 3.13297L5.26453 3.88024L4.62884 3.41841L3.99316 3.88024L4.20292 3.23468C3.6432 3.7009 3.15262 4.24713 2.74834 4.85575H2.96732L2.56266 5.14972C2.49962 5.25489 2.43915 5.36173 2.38121 5.47015L2.57444 6.06485L2.21393 5.80293C2.12432 5.99279 2.04235 6.18692 1.96867 6.3851L2.18156 7.04036H2.96732L2.33161 7.50219L2.57444 8.24947L1.93876 7.78764L1.55798 8.0643C1.51986 8.37066 1.5 8.6827 1.5 8.99941H8.99964C8.99964 4.85763 8.99964 4.36934 8.99964 1.5C7.51811 1.5 6.13703 1.92975 4.97397 2.67114ZM5.26453 8.24947L4.62884 7.78764L3.99316 8.24947L4.23599 7.50219L3.60028 7.04036H4.38604L4.62884 6.29309L4.87165 7.04036H5.65741L5.0217 7.50219L5.26453 8.24947ZM5.0217 5.31758L5.26453 6.06485L4.62884 5.60303L3.99316 6.06485L4.23599 5.31758L3.60028 4.85575H4.38604L4.62884 4.10848L4.87165 4.85575H5.65741L5.0217 5.31758ZM7.95461 8.24947L7.31893 7.78764L6.68325 8.24947L6.92608 7.50219L6.29037 7.04036H7.07613L7.31893 6.29309L7.56173 7.04036H8.34749L7.71178 7.50219L7.95461 8.24947ZM7.71178 5.31758L7.95461 6.06485L7.31893 5.60303L6.68325 6.06485L6.92608 5.31758L6.29037 4.85575H7.07613L7.31893 4.10848L7.56173 4.85575H8.34749L7.71178 5.31758ZM7.71178 3.13297L7.95461 3.88024L7.31893 3.41841L6.68325 3.88024L6.92608 3.13297L6.29037 2.67114H7.07613L7.31893 1.92386L7.56173 2.67114H8.34749L7.71178 3.13297Z"
+                fill="#1A47B8" />
+            </svg>
+            English (US)
+          </button>
+          <!-- Dropdown -->
+          <div class="dark:text-gray-200 z-50 hidden bg-neutral-primary-medium rounded-[10px] shadow-lg w-44"
+            id="language-dropdown-menu">
+            <ul class="p-2 text-sm text-body bg-gray-300 dark:bg-slate-700 rounded-[10px] font-medium" role="none">
+              <li>
+                <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading hover:scale-110 ease-in-out rounded" role="menuitem">
+                  <div class="inline-flex items-center">
+                    <svg class="h-4 w-4 me-1.5" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.00023 16.5C13.1425 16.5 16.5005 13.1421 16.5005 9C16.5005 4.85786 13.1425 1.5 9.00023 1.5C4.85797 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85797 16.5 9.00023 16.5Z"
+                        fill="white" />
+                      <path d="M8.67548 8.99996H16.5012C16.5012 8.32308 16.4109 7.66735 16.2428 7.04358H8.67548V8.99996Z"
+                        fill="#D80027" />
+                      <path d="M8.67548 5.08712H15.4004C14.9413 4.338 14.3543 3.67585 13.6699 3.13074H8.67548V5.08712Z"
+                        fill="#D80027" />
+                      <path
+                        d="M9.0005 16.5001C10.7655 16.5001 12.3878 15.89 13.6689 14.8698H4.33209C5.61318 15.89 7.23548 16.5001 9.0005 16.5001Z"
+                        fill="#D80027" />
+                      <path
+                        d="M2.60125 12.9132H15.4C15.7686 12.3118 16.0545 11.6543 16.2425 10.9567H1.75879C1.94679 11.6543 2.23265 12.3118 2.60125 12.9132Z"
+                        fill="#D80027" />
+                      <path
+                        d="M4.97397 2.67114H5.65741L5.0217 3.13297L5.26453 3.88024L4.62884 3.41841L3.99316 3.88024L4.20292 3.23468C3.6432 3.7009 3.15262 4.24713 2.74834 4.85575H2.96732L2.56266 5.14972C2.49962 5.25489 2.43915 5.36173 2.38121 5.47015L2.57444 6.06485L2.21393 5.80293C2.12432 5.99279 2.04235 6.18692 1.96867 6.3851L2.18156 7.04036H2.96732L2.33161 7.50219L2.57444 8.24947L1.93876 7.78764L1.55798 8.0643C1.51986 8.37066 1.5 8.6827 1.5 8.99941H8.99964C8.99964 4.85763 8.99964 4.36934 8.99964 1.5C7.51811 1.5 6.13703 1.92975 4.97397 2.67114ZM5.26453 8.24947L4.62884 7.78764L3.99316 8.24947L4.23599 7.50219L3.60028 7.04036H4.38604L4.62884 6.29309L4.87165 7.04036H5.65741L5.0217 7.50219L5.26453 8.24947ZM5.0217 5.31758L5.26453 6.06485L4.62884 5.60303L3.99316 6.06485L4.23599 5.31758L3.60028 4.85575H4.38604L4.62884 4.10848L4.87165 4.85575H5.65741L5.0217 5.31758ZM7.95461 8.24947L7.31893 7.78764L6.68325 8.24947L6.92608 7.50219L6.29037 7.04036H7.07613L7.31893 6.29309L7.56173 7.04036H8.34749L7.71178 7.50219L7.95461 8.24947ZM7.71178 5.31758L7.95461 6.06485L7.31893 5.60303L6.68325 6.06485L6.92608 5.31758L6.29037 4.85575H7.07613L7.31893 4.10848L7.56173 4.85575H8.34749L7.71178 5.31758ZM7.71178 3.13297L7.95461 3.88024L7.31893 3.41841L6.68325 3.88024L6.92608 3.13297L6.29037 2.67114H7.07613L7.31893 1.92386L7.56173 2.67114H8.34749L7.71178 3.13297Z"
+                        fill="#1A47B8" />
+                    </svg>
+                    English (US)
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading hover:scale-110 ease-in-out rounded" role="menuitem">
+                  <div class="inline-flex items-center">
+                    <svg class="h-4 w-4 me-1.5" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1.96631 11.6087C3.02601 14.4647 5.77508 16.5 8.99981 16.5C12.2245 16.5 14.9736 14.4647 16.0333 11.6087L8.99981 10.9565L1.96631 11.6087Z"
+                        fill="#FFDA44" />
+                      <path
+                        d="M8.99981 1.5C5.77508 1.5 3.02601 3.53531 1.96631 6.39132L8.99981 7.04347L16.0333 6.39129C14.9736 3.53531 12.2245 1.5 8.99981 1.5Z"
+                        fill="black" />
+                      <path
+                        d="M1.96649 6.39136C1.66503 7.20385 1.5 8.08264 1.5 9.00004C1.5 9.91744 1.66503 10.7962 1.96649 11.6087H16.0335C16.335 10.7962 16.5 9.91744 16.5 9.00004C16.5 8.08264 16.335 7.20385 16.0335 6.39136H1.96649Z"
+                        fill="#D80027" />
+                    </svg>
+                    Deutsch
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading hover:scale-110 ease-in-out rounded" role="menuitem">
+                  <div class="inline-flex items-center">
+                    <svg class="h-4 w-4 me-1.5" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z"
+                        fill="white" />
+                      <path
+                        d="M16.5012 9.00018C16.5012 5.77544 14.4659 3.02637 11.6099 1.96667V16.0337C14.4659 14.974 16.5012 12.2249 16.5012 9.00018Z"
+                        fill="#D80027" />
+                      <path
+                        d="M1.5 8.99994C1.5 12.2247 3.53531 14.9737 6.39132 16.0334V1.96643C3.53531 3.02613 1.5 5.7752 1.5 8.99994Z"
+                        fill="#249F58" />
+                    </svg>
+                    Italiano
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading hover:scale-110 ease-in-out rounded" role="menuitem">
+                  <div class="inline-flex items-center">
+                    <svg class="h-4 w-4 me-1.5" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z"
+                        fill="#D80027" />
+                      <path
+                        d="M5.60449 6.06458L6.25195 8.05676H8.34668L6.65332 9.29016L7.30078 11.2823L5.60449 10.0519L3.9082 11.2823L4.55859 9.29016L2.8623 8.05676H4.95703L5.60449 6.06458Z"
+                        fill="#FFDA44" />
+                      <path
+                        d="M10.3906 13.1162L9.89551 12.5068L9.16309 12.791L9.58789 12.1318L9.09277 11.5195L9.85156 11.7217L10.2793 11.0625L10.3203 11.8477L11.082 12.0498L10.3467 12.3311L10.3906 13.1162Z"
+                        fill="#FFDA44" />
+                      <path
+                        d="M11.375 11.3291L11.6094 10.5791L10.9678 10.125L11.7529 10.1133L11.9844 9.36328L12.2393 10.1074L13.0244 10.0986L12.3945 10.5674L12.6465 11.3115L12.0049 10.8574L11.375 11.3291Z"
+                        fill="#FFDA44" />
+                      <path
+                        d="M12.7041 7.00488L12.3584 7.71094L12.9209 8.25879L12.1445 8.14746L11.7988 8.85059L11.6641 8.07715L10.8848 7.96582L11.582 7.59961L11.4473 6.82324L12.0098 7.37109L12.7041 7.00488Z"
+                        fill="#FFDA44" />
+                      <path
+                        d="M10.4126 4.86621L10.354 5.64844L11.0835 5.94434L10.3188 6.13184L10.2632 6.91699L9.8501 6.24902L9.08545 6.43652L9.59229 5.83594L9.17627 5.1709L9.90576 5.4668L10.4126 4.86621Z"
+                        fill="#FFDA44" />
+                    </svg>
+                    中文 (繁體)
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button data-collapse-toggle="navbar-language" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-[10px] md:hidden hover:bg-neutral-secondary-soft hover:text-heading hover:scale-110 ease-in-out focus:outline-none dark:text-gray-200"
+            aria-controls="navbar-language" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+              viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
+            </svg>
+          </button>
+        </div>
+        <div class="dark:text-gray-200 items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
+          <ul
+            class="font-medium flex flex-col items-center p-4 md:p-0 mt-4 border border-default rounded-[10px] bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+            <li>
+              <a href="#" class="block py-2 px-3 text-heading bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0 hover:scale-110 ease-in-out" aria-current="page">الرئيسية</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:scale-110 ease-in-out">المسارات التعليمية </a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:scale-110 ease-in-out">خدماتنا</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:scale-110 ease-in-out">حول الاكادمية</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:scale-110 ease-in-out">أتصل بنا</a>
+            </li>
+            <li class="pr-2">
+              <button id="theme-toggle" type="button" class="text-black dark:text-gray-200 hover:scale-125 ease-in-out rounded-lg text-sm p-2.5">
+                <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end nav -->
+
+    <section class="pt-30 bg-gray-200 dark:bg-slate-900">
+      <div class="flex max-w-5xl mx-auto">
+        <div class="grow m-auto pb-3 md:pb-0">
+          <h1 class="text-blue-500 text-3xl text-center md:text-right font-bold dark:text-gray-100 mb-5"> تطوير الواجهات Frontend</h1>
+          <p class="mb-5 font-bold text-center md:text-right dark:text-gray-200">المدرب <span class="text-red-600 dark:text-blue-500">احمد المحمد</span>
+          </p>
+          <div class="flex gap-3 justify-center md:justify-start dark:text-gray-200">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-date inline ml-2"
+                viewBox="0 0 16 16">
+                <path
+                  d="M6.445 11.688V6.354h-.633A13 13 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23" />
+                <path
+                  d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+              </svg>
+              نيسان/2026
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book inline ml-2" viewBox="0 0 16 16">
+                <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+              </svg>
+              14 درس
+            </span>
+            <span>
+             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe inline ml-2" viewBox="0 0 16 16">
+                <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
+             </svg>
+             العربية
+            </span>
+          </div>
+        </div>
+        <div class="w-[25%] hidden md:flex">
+          <img class="w-full rounded-t-[10px] animate-[bounce_1s_infinite]" src="asstes/images/corce/front.jfif" alt="">
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- start content -->
+    <section class="main-content py-6 dark:bg-slate-700">
+      <div class="innr-content flex flex-col-reverse md:flex-row justify-between gap-5 max-w-5xl mx-auto">
+
+        <div class="c-tab content bg-gray-200 grow rounded-t-xl dark:bg-slate-900">
+          <div class="text-sm font-medium text-center text-body border-b border-default">
+            <ul class="flex flex-wrap -mb-px dark:text-gray-200" data-tabs-toggle="#tabcontent" aria-controls="tabcontent">
+              <li class="me-2">
+                <a href="" data-tabs-target="#desc" role="tab" aria-controls="desc" aria-selected="true"
+                  class="inline-block p-4 border-b border-transparent rounded-t-base hover:text-blue-400 hover:border-brand focus:text-blue-400">تفاصيل الكورس
+                </a>
+              </li>
+              <li class="me-2">
+                <a href="" data-tabs-target="#curr" role="tab" aria-controls="curr" aria-selected="false"
+                  class="inline-block p-4 border-b border-transparent rounded-t-base hover:text-blue-400 hover:border-brand focus:text-blue-400">المنهاج
+                </a>
+              </li>
+              <li class="me-2">
+                <a href="" data-tabs-target="#about" role="tab" aria-controls="about" aria-selected="false"
+                  class="inline-block p-4 border-b border-transparent rounded-t-base hover:text-blue-400 hover:border-brand focus:text-blue-400">حول المدرب
+                </a>
+              </li>
+            </ul>
+          </div>
+    
+          <div id="tabcontent">
+            <div id="desc" class=" p-9">
+              <div class="grid grid-cols-1 md:grid-cols-2 bg-gray-200 rounded-[10px] p-5 dark:bg-slate-700">
+                <div class="dark:text-gray-200">
+                  <ul class="flex flex-col gap-4">
+                    <li class="pt-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-person-check-fill inline  inline text-[#00D2FF] ml-2" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                      </svg>
+                      <span>اكثر من 2000 طالب التحق بالكورس</span>
+                    </li>
+                    <li class="pt-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-code-slash inline  inline text-[#00D2FF] ml-2" viewBox="0 0 16 16">
+                        <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
+                      </svg>
+                      <span>تعلم اساسيات البرمجة بالستخدام</span>
+                    </li>
+                    <li class="pt-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-laptop inline  inline text-[#00D2FF] ml-2" viewBox="0 0 16 16">
+                        <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"/>
+                      </svg>
+                      <span>تطوير تطبيقات الويب من خلال المشاريع</span>
+                    </li>
+                    <li class="pt-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-database-check inline  inline text-[#00D2FF] ml-2" viewBox="0 0 16 16">
+                        <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514"/>
+                        <path d="M12.096 6.223A5 5 0 0 0 13 5.698V7c0 .289-.213.654-.753 1.007a4.5 4.5 0 0 1 1.753.25V4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16c.536 0 1.058-.034 1.555-.097a4.5 4.5 0 0 1-.813-.927Q8.378 15 8 15c-1.464 0-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13h.027a4.6 4.6 0 0 1 0-1H8c-1.464 0-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10q.393 0 .774-.024a4.5 4.5 0 0 1 1.102-1.132C9.298 8.944 8.666 9 8 9c-1.464 0-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777M3 4c0-.374.356-.875 1.318-1.313C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4"/>
+                      </svg>
+                      <span>تعلم ادارة قواعد البيانات </span>
+                    </li>
+                    <li class="pt-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cpu inline  inline text-[#00D2FF] ml-2" viewBox="0 0 16 16">
+                        <path d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0m-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"/>
+                      </svg>
+                      <span>التعرف على اطر العمل مثل React.js</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="dark:text-gray-200 ">
+                  <ul class="flex flex-col gap-4">
+                    <li class="pt-2 mt-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-patch-check-fill inline  inline text-[#00D2FF] ml-2" viewBox="0 0 16 16">
+                        <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
+                      </svg>
+
+                      <span>شهادة معتمدة بعد انتهاء الكورس</span>
+                    </li>
+                    <li class="pt-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-mortarboard inline  inline text-[#00D2FF] ml-2" viewBox="0 0 16 16">
+                        <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"/>
+                        <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"/>
+                      </svg>
+                      <span>التدريس على يد خبراء في المجال البرمجة</span>
+                    </li>
+                    <li class="pt-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-chat-dots inline  inline text-[#00D2FF] ml-2" viewBox="0 0 16 16">
+                        <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                        <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2"/>
+                      </svg>
+                      <span>الاجابات على جميع الاستفسارات</span>
+                    </li>
+                    <li class="pt-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-briefcase inline  inline text-[#00D2FF] ml-2" viewBox="0 0 16 16">
+                        <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"/>
+                      </svg>
+                      <span>تدريب عملي لتجهيز الطلاب لسوق العمل</span>
+                    </li>
+                    <li class="pt-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-repeat inline  inline text-[#00D2FF] ml-2" viewBox="0 0 16 16">
+                        <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9"/>
+                        <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"/>
+                      </svg>
+                      <span>محتوى محدث بالستمرار باحدت التقنيات</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+    
+              <img class="mt-5 rounded-t-[10px] w-[100%] h-[400px]" src="asstes/images/360_F_501059332_XXz84AccD4APbF3KJPn32kpRa3KPKXXh.jpg" alt="">
+              <p class="pt-5 w-[90%] leading-8 dark:text-gray-200"></p>
+              <p class="pt-5 w-[90%] leading-8 dark:text-gray-200">هل تحلم بأن تصبح مبرمج ويب قادراً على بناء تطبيقات متكاملة من الصفر؟ دبلوم تطوير الويب الشامل في كوديك هو رحلتك المخططة بعناية لتنتقل من مرحلة 'لا أعرف شيئاً' إلى مبرمج Full-Stack محترف. لن نقوم بتعليمك الأكواد فقط، بل سنعلمك كيف تفكر كمبرمج، وكيف تحلل المشكلات وتبني حلولاً تقنية مبتكرة</p>
+              <img class="mt-5 rounded-t-[10px] w-[100%] h-[400px]" src="asstes/images/image.jfif" alt="">
+              <p class="pt-5 w-[90%] leading-8 dark:text-gray-200">خلال هذا الدبلوم، سنركز على الجانب العملي بنسبة 90%. ستبدأ ببناء صفحات بسيطة وتتدرج حتى تصل لبناء متجر إلكتروني كامل ولوحات تحكم معقدة. عند تخرجك، لن تحمل شهادة فقط، بل ستحمل معرض أعمال (Portfolio) قوياً يفتح لك أبواب الشركات الكبرى أو يجعلك تبدأ عملك الخاص كمبرمج مستقل."</p>
+    
+            </div>
+    
+            <div id="curr" class="p-8">
+              <div id="accordion-color" data-accordion="collapse"
+                class="mt-5 bg-gray-100 dark:bg-slate-600 rounded-xl overflow-hidden hover:bg-gray-100 hover:dark:bg-slate-700">
+                <h2 id="accordion-color-heading-1" class="dark:text-gray-200">
+                  <button type="button"
+                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body dark:text-white rounded-t-base  hover:text-fg-brand hover:bg-brand-softer gap-3"
+                    data-accordion-target="#accordion-color-body-1" aria-expanded="true" aria-controls="accordion-color-body-1">
+                    <span>شرح كامل للغة Html5</span>
+                    <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m5 15 7-7 7 7" />
+                    </svg>
+                  </button>
+                </h2>
+                <div id="accordion-color-body-1" class="hidden bg-white dark:bg-slate-800 dark:text-gray-200"
+                  aria-labelledby="accordion-color-heading-1">
+                  <div class="p-4 md:p-5 flex justify-between">
+                    <div class="flex gap-2.5">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                        class="bi bi-caret-left-square inline" viewBox="0 0 16 16">
+                        <path
+                          d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                        <path
+                          d="M10.205 12.456A.5.5 0 0 0 10.5 12V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4a.5.5 0 0 0 .537.082" />
+                      </svg>
+                      <a href="">مقدمة في لغة html</a>
+                    </div>
+                    <div class="flex gap-2.5">
+                      <span>47 دقيقة</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-eye inline"
+                        viewBox="0 0 16 16">
+                        <path
+                          d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="p-4 md:p-5 flex justify-between">
+                    <div class="flex gap-2.5">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                        class="bi bi-caret-left-square inline" viewBox="0 0 16 16">
+                        <path
+                          d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                        <path
+                          d="M10.205 12.456A.5.5 0 0 0 10.5 12V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4a.5.5 0 0 0 .537.082" />
+                      </svg>
+                      <a href="">الدرس الاول</a>
+                    </div>
+                    <div class="flex gap-2.5">
+                      <span> 54 دقيقة</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-eye inline"
+                        viewBox="0 0 16 16">
+                        <path
+                          d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="p-4 md:p-5 flex justify-between">
+                    <div class="flex gap-2.5">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                        class="bi bi-caret-left-square inline" viewBox="0 0 16 16">
+                        <path
+                          d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                        <path
+                          d="M10.205 12.456A.5.5 0 0 0 10.5 12V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4a.5.5 0 0 0 .537.082" />
+                      </svg>
+                      <a href="">الدرس الثاني</a>
+                    </div>
+                    <div class="flex gap-2.5">
+                      <span>25 دقيقة</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-eye inline"
+                        viewBox="0 0 16 16">
+                        <path
+                          d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+            
+                <h2 id="accordion-color-heading-2" class="dark:text-gray-200">
+                  <button type="button"
+                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body dark:text-white rounded-t-base  hover:text-fg-brand hover:bg-brand-softer gap-3"
+                    data-accordion-target="#accordion-color-body-2" aria-expanded="false" aria-controls="accordion-color-body-2">
+                    <span>شرح كامل للغة css</span>
+                    <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m5 15 7-7 7 7" />
+                    </svg>
+                  </button>
+                </h2>
+                <div id="accordion-color-body-2" class="hidden bg-white dark:bg-slate-800 dark:text-gray-200"
+                  aria-labelledby="accordion-color-heading-2">
+                    <div class="p-4 md:p-5 flex justify-between">
+                      <div class="flex gap-2.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                          class="bi bi-caret-left-square inline" viewBox="0 0 16 16">
+                          <path
+                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                          <path
+                            d="M10.205 12.456A.5.5 0 0 0 10.5 12V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4a.5.5 0 0 0 .537.082" />
+                        </svg>
+                        <a href="">مقدمة في لغة css</a>
+                      </div>
+                      <div class="flex gap-2.5">
+                        <span>30 دقيقة</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-eye inline"
+                          viewBox="0 0 16 16">
+                          <path
+                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                          <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="p-4 md:p-5 flex justify-between">
+                      <div class="flex gap-2.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                          class="bi bi-caret-left-square inline" viewBox="0 0 16 16">
+                          <path
+                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                          <path
+                            d="M10.205 12.456A.5.5 0 0 0 10.5 12V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4a.5.5 0 0 0 .537.082" />
+                        </svg>
+                        <a href="">الدرس الاول</a>
+                      </div>
+                      <div class="flex gap-2.5">
+                        <span>25 دقيقة</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-eye inline"
+                          viewBox="0 0 16 16">
+                          <path
+                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                          <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="p-4 md:p-5 flex justify-between">
+                      <div class="flex gap-2.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                          class="bi bi-caret-left-square inline" viewBox="0 0 16 16">
+                          <path
+                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                          <path
+                            d="M10.205 12.456A.5.5 0 0 0 10.5 12V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4a.5.5 0 0 0 .537.082" />
+                        </svg>
+                        <a href="">الدرس الثاني</a>
+                      </div>
+                      <div class="flex gap-2.5">
+                        <span>48 دقيقة</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-eye inline"
+                          viewBox="0 0 16 16">
+                          <path
+                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                          <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                        </svg>
+                      </div>
+                    </div>
+                </div>
+            
+                <h2 id="accordion-color-heading-3" class="dark:text-gray-200">
+                  <button type="button"
+                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body dark:text-white rounded-t-base  hover:text-fg-brand hover:bg-brand-softer gap-3"
+                    data-accordion-target="#accordion-color-body-3" aria-expanded="false" aria-controls="accordion-color-body-3">
+                    <span>شرح كامل للغة js</span>
+                    <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m5 15 7-7 7 7" />
+                    </svg>
+                  </button>
+                </h2>
+                <div id="accordion-color-body-3" class="hidden bg-white dark:bg-slate-800 dark:text-gray-200"
+                  aria-labelledby="accordion-color-heading-3">
+                  
+                    <div class="p-4 md:p-5 flex justify-between">
+                      <div class="flex gap-2.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                          class="bi bi-caret-left-square inline" viewBox="0 0 16 16">
+                          <path
+                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                          <path
+                            d="M10.205 12.456A.5.5 0 0 0 10.5 12V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4a.5.5 0 0 0 .537.082" />
+                        </svg>
+                        <a href="">مقدمة في لغة js</a>
+                      </div>
+                      <div class="flex gap-2.5">
+                        <span>40 دقيقة</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-eye inline"
+                          viewBox="0 0 16 16">
+                          <path
+                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                          <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="p-4 md:p-5 flex justify-between">
+                      <div class="flex gap-2.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                          class="bi bi-caret-left-square inline" viewBox="0 0 16 16">
+                          <path
+                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                          <path
+                            d="M10.205 12.456A.5.5 0 0 0 10.5 12V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4a.5.5 0 0 0 .537.082" />
+                        </svg>
+                        <a href="">الدرس الاول</a>
+                      </div>
+                      <div class="flex gap-2.5">
+                        <span>55 دقيقة</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-eye inline"
+                          viewBox="0 0 16 16">
+                          <path
+                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                          <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="p-4 md:p-5 flex justify-between">
+                      <div class="flex gap-2.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                          class="bi bi-caret-left-square inline" viewBox="0 0 16 16">
+                          <path
+                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                          <path
+                            d="M10.205 12.456A.5.5 0 0 0 10.5 12V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4a.5.5 0 0 0 .537.082" />
+                        </svg>
+                        <a href="">الدرس الثاني</a>
+                      </div>
+                      <div class="flex gap-2.5">
+                        <span>56 دقيقة</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-eye inline"
+                          viewBox="0 0 16 16">
+                          <path
+                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                          <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                        </svg>
+                      </div>
+                    </div>
+                 
+                </div>
+            
+              </div>
+            </div>
+    
+            <div id="about" class="p-8">
+              <h3 class="text-2xl text-center md:text-right font-bold m-2 dark:text-gray-200">حول المدرب</h3>
+              <div class="flex items-center gap-5 mt-7">
+                <img class="w-[150px] h-[150px] rounded-full object-cover" src="asstes/images/hg.png" alt="">
+                <span class="dark:text-gray-200">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                    class="bi bi-person-check-fill inline ml-2" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0" />
+                    <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                  </svg>
+                  3000 طالب
+                  </span>
+                <span class="dark:text-gray-200">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-book inline ml-2"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+                  </svg>
+                  20 كورس
+                </span>
+    
+              </div>
+              <p class="my-3 text-center md:text-right dark:text-gray-200">مهندس برمجيات و مدرب امن سبراني</p>
+              <div class="flex justify-center md:justify-start gap-4 dark:text-gray-200 mt-4">
+                <a href="" class="hover:scale-110">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-instagram inline" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                  </svg>
+                </a>
+                <a href="" class="hover:scale-110">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-whatsapp inline" viewBox="0 0 16 16">
+                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                  </svg>
+                </a>
+                <a href="" class="hover:scale-110"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-telegram inline" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09" />
+                  </svg>
+                </a>
+                <a href="" class="hover:scale-110"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-twitter-x inline" viewBox="0 0 16 16">
+                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                  </svg>
+                </a>
+                <a href="" class="hover:scale-110">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-facebook inline" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="reviwse py-2 mb-3 m-auto w-[90%]">
+            <h2 class="text-2xl font-bold my-5 dark:text-gray-200">التقيمات</h2>
+            <div class="flex items-center gap-2.5">
+              <h3 class="text-2xl font-bold text-blue-500">250</h3>
+              <div class="start flex gap-2 text-yellow-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-star-fill inline"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                  class="bi bi-star-fill inline" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                  class="bi bi-star-fill inline" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                  class="bi bi-star-fill inline" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                  class="bi bi-star-fill inline" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="progres bg-gray-100 rounded-[10px] mt-3 py-4 dark:bg-slate-700">
+              <div class="flex items-center gap-2 mb-3 p-2">
+                <span class="text-xl font-bold text-blue-500">90%</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                  class="bi bi-star-fill inline text-yellow-500" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <div class="w-full bg-neutral-quaternary rounded-full h-2">
+                  <div class="bg-yellow-500 h-2 rounded-full" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 mb-3 p-2">
+                <span class="text-xl font-bold text-blue-500">80%</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                  class="bi bi-star-fill inline text-yellow-500" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <div class="w-full bg-neutral-quaternary rounded-full h-2">
+                  <div class="bg-yellow-500 h-2 rounded-full" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 mb-3 p-2">
+                <span class="text-xl font-bold text-blue-500">70%</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                  class="bi bi-star-fill inline text-yellow-500" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <div class="w-full bg-neutral-quaternary rounded-full h-2">
+                  <div class="bg-yellow-500 h-2 rounded-full" style="width: 70%"></div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 mb-3 p-2">
+                <span class="text-xl font-bold text-blue-500">60%</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                  class="bi bi-star-fill inline text-yellow-500" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <div class="w-full bg-neutral-quaternary rounded-full h-2">
+                  <div class="bg-yellow-500 h-2 rounded-full" style="width: 60%"></div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 mb-3 p-2">
+                <span class="text-xl font-bold text-blue-500">50%</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                  class="bi bi-star-fill inline text-yellow-500" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <div class="w-full bg-neutral-quaternary rounded-full h-2">
+                  <div class="bg-yellow-500 h-2 rounded-full" style="width: 50%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+
+        
+        <div class="corse-details w-[100%] md:w-[25%] h-full bg-gray-200 p-[20px] shrink-0 rounded-t-xl dark:bg-slate-900">
+          <p class="text-2xl text-center font-bold dark:text-gray-200">السعر 150$</p>
+          <button class="btn animate-pulse m-4 mx-auto flex justify-center">اشترك الان</button>
+          <div class="flex flex-col text-center md:text-right gap-2 rounded-b-[10px] dark:text-gray-200">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                class="bi bi-person-check-fill inline  inline text-[#00D2FF] ml-2" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0" />
+                <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+              </svg>
+              اكثر من 2000 طالب
+              </span>
+            <span class="pt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                class="bi bi-file-earmark-play inline text-[#00D2FF] ml-2" viewBox="0 0 16 16">
+                <path d="M6 6.883v4.234a.5.5 0 0 0 .757.429l3.528-2.117a.5.5 0 0 0 0-.858L6.757 6.454a.5.5 0 0 0-.757.43z" />
+                <path
+                  d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z" />
+              </svg>
+        
+              يشمل 30 درس مفصل
+            </span>
+            <span class="pt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-hourglass-split inline text-[#00D2FF] ml-2"
+                viewBox="0 0 16 16">
+                <path
+                  d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z" />
+              </svg>
+              مدة الكورس 20 ساعة
+            </span>
+            <span class="pt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-person-vcard inline text-[#00D2FF] ml-2"
+                viewBox="0 0 16 16">
+                <path
+                  d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5" />
+                <path
+                  d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96q.04-.245.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 1 1 12z" />
+              </svg>
+              باشراف مدربين محترفين
+            </span>
+            <span class="pt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-award inline text-[#00D2FF] ml-2"
+                viewBox="0 0 16 16">
+                <path
+                  d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z" />
+                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z" />
+              </svg>
+              شهادة معتمدة عالميا
+            </span>
+            <span class="pt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-star inline text-[#00D2FF] ml-2"
+                viewBox="0 0 16 16">
+                <path
+                  d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+              </svg>
+              تقيم 4.5 من 5
+            </span>            
+            <span class="pt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-person-badge inline text-[#00D2FF] ml-2"
+                viewBox="0 0 16 16">
+                <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                <path
+                  d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492z" />
+              </svg>
+              داعم فني
+            </span>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <!-- end content -->
+    
+    <!-- start courses section -->
+    <section class="p-5 bg-gray-200 dark:bg-slate-900">
+      <h1 class="text-blue-500 dark:text-gray-200 text-center text-4xl font-bold leading-16">كورسات متعلقة</h1>
+      <div class="swiper relative max-w-5xl mx-auto">
+      <!-- Additional required wrapper -->
+        <div class="courses swiper-wrapper mt-8">
+          <div class="course swiper-slide relative bg-white dark:bg-slate-700 rounded-[12px] overflow-hidden hover:translate-1 transition-all ease-in-out cursor-pointer">
+            <div class="absolute top-[5px] right-[5px] text-white bg-red-500 dark:bg-blue-400 px-2 py-1 rounded-md">python
+            </div>
+            <div class="course-img w-full h-[200px] object-cover">
+              <img class="w-full h-full" src="asstes/images/corce/images.jfif" alt="">
+            </div>
+            <div class="course-info p-2">
+              <h3 class="my-3 text-xl text-slate-700 dark:text-gray-100 font-bold text-center">مسار تعلم بايثون </h3>
+              <p class="text-slate-700 dark:text-gray-200 text-center ">لغة المستقبل بين يديك. تعلم البرمجة باستخدام Python
+                وابدأ رحلتك في عالم تحليل البيانات والذكاء الاصطناعي بخطوات عملية.</p>
+              <div class="price flex justify-between text-xl text-slate-700 dark:text-gray-200 p-2">
+                <div>
+                  <span>السعر السابق</span>
+                  <span class="line-through">200$</span>
+                </div>
+                <span>100$</span>
+              </div>
+              <button
+                class="text-white bg-red-500 dark:bg-blue-400 w-full py-2 px-5 mt-1 rounded-[8px] hover:bg-red-600 dark:hover:bg-blue-500 cursor-pointer p-2">اشترك
+                الان</button>
+            </div>
+          </div>
+          <div class="course swiper-slide relative bg-white dark:bg-slate-700 rounded-[12px] overflow-hidden hover:translate-1 transition-all ease-in-out cursor-pointer">
+            <div class="absolute top-[5px] right-[5px] text-white bg-red-500 dark:bg-blue-400 px-2 py-1 rounded-md">Flutter
+            </div>
+            <div class="course-img w-full h-[200px] ">
+              <img class="w-full h-full object-cover" src="asstes/images/corce/f.jfif" alt="">
+            </div>
+            <div class="course-info p-2">
+              <h3 class="my-3 text-xl text-slate-700 dark:text-gray-100 font-bold text-center">تطوير تطبيقات الموبايل</h3>
+              <p class="text-slate-700 dark:text-gray-200 text-center ">ابنِ تطبيقات تعمل على Android و iOS بكود واحد
+                باستخدام
+                Flutter. تعلم كيفية رفع تطبيقك على المتاجر العالمية باحترافية.</p>
+              <div class="price flex justify-between text-xl text-slate-700 dark:text-gray-200 p-2">
+                <div>
+                  <span>السعر السابق</span>
+                  <span class="line-through">300$</span>
+                </div>
+                <span>200$</span>
+              </div>
+              <button
+                class="text-white bg-red-500 dark:bg-blue-400 w-full py-2 px-5 mt-1 rounded-[8px] hover:bg-red-600 dark:hover:bg-blue-500 cursor-pointer p-2">اشترك
+                الان</button>
+            </div>
+          </div>
+          <div class="course swiper-slide relative bg-white dark:bg-slate-700 rounded-[12px] overflow-hidden hover:translate-1 transition-all ease-in-out cursor-pointer">
+            <div class="absolute top-[5px] right-[5px] text-white bg-red-500 dark:bg-blue-400 px-2 py-1 rounded-md">Backend</div>
+            <div class="course-img w-full h-[200px] object-cover">
+              <img class="w-full h-full" src="asstes/images/corce/back.jfif" alt="">
+            </div>
+            <div class="course-info p-2">
+              <h3 class="my-3 text-xl text-slate-700 dark:text-gray-100 font-bold text-center"> البرمجة الخلفية</h3>
+              <p class="text-slate-700 dark:text-gray-200 text-center ">تعلم بناء عقل الموقع، إدارة قواعد البيانات، وتأمين
+                السيرفرات باستخدام Node.js. كن المبرمج الذي يدير العمليات المعقدة</p>
+              <div class="price flex justify-between text-xl text-slate-700 dark:text-gray-200 p-2">
+                <div>
+                  <span>السعر السابق</span>
+                  <span class="line-through">250$</span>
+                </div>
+                <span>200$</span>
+              </div>
+              <button class="text-white bg-red-500 dark:bg-blue-400 w-full py-2 px-5 mt-1 rounded-[8px] hover:bg-red-600 dark:hover:bg-blue-500 cursor-pointer p-2">اشترك الان</button>
+            </div>
+          </div>
+          <div class="course swiper-slide relative bg-white dark:bg-slate-700 rounded-[12px] overflow-hidden hover:translate-1 transition-all ease-in-out cursor-pointer">
+            <div class="absolute top-[5px] right-[5px] text-white bg-red-500 dark:bg-blue-400 px-2 py-1 rounded-md">Cyber
+              Security</div>
+            <div class="course-img w-full h-[200px] object-cover">
+              <img class="w-full h-full" src="asstes/images/corce/cyber.jfif" alt="">
+            </div>
+            <div class="course-info p-2">
+              <h3 class="my-3 text-xl text-slate-700 dark:text-gray-100 font-bold text-center">لأمن السيبراني</h3>
+              <p class="text-slate-700 dark:text-gray-200 text-center ">احمِ الأنظمة واكتشف الثغرات. تعلم فنون الأمن الرقمي
+                وكيفية التصدي للهجمات الإلكترونية لتصبح خبيراً مطلوباً في السوق.</p>
+              <div class="price flex justify-between text-xl text-slate-700 dark:text-gray-200 p-2">
+                <div>
+                  <span>السعر السابق</span>
+                  <span class="line-through">400$</span>
+                </div>
+                <span>300$</span>
+              </div>
+              <button
+                class="text-white bg-red-500 dark:bg-blue-400 w-full py-2 px-5 mt-1 rounded-[8px] hover:bg-red-600 dark:hover:bg-blue-500 cursor-pointer p-2">اشترك
+                الان</button>
+            </div>
+          </div>
+          <div class="course swiper-slide relative bg-white dark:bg-slate-700 rounded-[12px] overflow-hidden hover:translate-1 transition-all ease-in-out cursor-pointer">
+            <div class="absolute top-[5px] right-[5px] text-white bg-red-500 dark:bg-blue-400 px-2 py-1 rounded-md">Game Dev</div>
+            <div class="course-img w-full h-[200px] object-cover">
+              <img class="w-full h-full" src="asstes/images/corce/game.jfif" alt="">
+            </div>
+            <div class="course-info p-2">
+              <h3 class="my-3 text-xl text-slate-700 dark:text-gray-100 font-bold text-center">تطوير الألعاب</h3>
+              <p class="text-slate-700 dark:text-gray-200 text-center ">حوّل شغفك بالألعاب إلى مهنة. تعلم بناء العوالم الثلاثية الأبعاد وبرمجة شخصياتك الخاصة من الصفر وحتى النشر</p>
+              <div class="price flex justify-between text-xl text-slate-700 dark:text-gray-200 p-2">
+                <div>
+                  <span>السعر السابق</span>
+                  <span class="line-through">250$</span>
+                </div>
+                <span>200$</span>
+              </div>
+              <button class="text-white bg-red-500 dark:bg-blue-400 w-full py-2 px-5 mt-1 rounded-[8px] hover:bg-red-600 dark:hover:bg-blue-500 cursor-pointer p-2">اشترك الان</button>
+            </div>
+          </div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="btn-controls flex justify-between absolute w-full top-[50%] z-20">
+          <div class="btn-next w-[30px] h-[30px] rounded-full bg-gray-200 dark:bg-slate-900 dark:text-gray-200 flex items-center justify-center cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right inline" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"/>
+              <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"/>
+            </svg>
+          </div>
+          <div class="btn-prev w-[30px] h-[30px] rounded-full bg-gray-200 dark:bg-slate-900 dark:text-gray-200 flex items-center justify-center cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-left inline" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+              <path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+            </svg>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    <!-- end courses section -->
+
+    <!-- start footer -->
+    <footer class="relative bg-slate-700 border-[5px] border-t-red-500 dark:border-t-blue-500" style="background-image: url('./asstes/images/fotar.jfif'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+      <div class="absolute z-10 w-full h-full bg-[#09090b3f]"></div>
+      <div class=" max-w-5xl mx-auto">
+       <div class="relative z-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 p-3 pt-9">
+
+        <div class="f1-section">
+          <h3 class="text-xl text-gray-200 font-bold mb-5">أكاديمية كوديك</h3>
+          <p class="text-gray-200 leading-7 w-[80%]">تهدف أكاديمية إلى تعليم البرمجة باللغة العربية وإثراء المحتوى البرمجي العربي عبر توفير دورات وكتب ودروس عالية الجودة من متخصصين في المجال،</p>
+        </div>
+        
+        <div class="f2-section">
+          <h3 class="text-xl text-gray-200 font-bold mb-5">روابط سريعة</h3>
+          <ul class="flex flex-col gap-2">
+            <li><a class="text-gray-200 hover:text-gray-400" href="">الرئيسية</a></li>
+            <li><a class="text-gray-200 hover:text-gray-400" href="">المسارات التعليمية</a></li>
+            <li><a class="text-gray-200 hover:text-gray-400" href="">عن الأكاديمية</a></li>
+            <li><a class="text-gray-200 hover:text-gray-400" href="">تواصل معنا</a></li>
+          </ul>
+        </div>
+
+        <div class="f3-section">
+          <h3 class="text-xl text-gray-200 font-bold mb-5">مساراتنا الأشهر</h3>
+          <ul class="flex flex-col gap-2">
+            <li><a class="text-gray-200 hover:text-gray-400" href="">تطوير الويب (Frontend)</a></li>
+            <li><a class="text-gray-200 hover:text-gray-400" href="">البرمجيات الخلفية (Backend)</a></li>
+            <li><a class="text-gray-200 hover:text-gray-400" href="">برمجة تطبيقات الموبايل</a></li>
+            <li><a class="text-gray-200 hover:text-gray-400" href="">الأمن السيبراني</a></li>
+          </ul>
+        </div>
+
+        <div class="f4-section">
+          <h3 class="text-xl text-gray-200 font-bold mb-5"> انضم إلى عائلتنا التقنية</h3>
+          <form class="flex flex-col gap-3" action="">
+            <input class="p-3 grow border border-gray-200 rounded-[8px] placeholder:text-gray-200" type="email" placeholder=" بريدك الإلكتروني">
+            <button class="btn">اشترك الآن</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="relative z-20 py-[20px] flex md:flex justify-center md:justify-around border-t-1 border-amber-100 p-3">
+        <div class="text-gray-200">جميع الحقوق محفوظة لأكاديمية [اسم أكاديميتك] © 2026.</div>
+        <div class="text-gray-200">صُنع بكل شغف بواسطة مبرمجة فاطمة </div>
+      </div>
+     </div>
+
+    </footer>
+    <!-- end footer -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+    <script src="asstes/js/script.js"></script>
+  </body>
+</html>

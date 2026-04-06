@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" dir="rtl">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS | Home</title>
+    <link rel="stylesheet" href="asstes/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--font googlegh-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+  </head>
+  <body>
+
+    <!-- start nav -->
+    <nav class="dark:bg-gray-700 bg-gray-300 fixed w-full z-[100] top-0" style="box-shadow: 1px 3px 1px rgba(1, 32, 45, 0.263);">
+      <div class="max-w-5xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="asstes/images/logo.png" class="w-[70px] h-[70px] object-cover rounded-full" alt="Flowbite Logo" />
+        </a>
+        <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+          <button type="button" data-dropdown-toggle="language-dropdown-menu"
+            class="dark:text-gray-200 flex items-center text-heading bg-transparent hover:bg-neutral-secondary-medium hover:scale-110 ease-in-out font-medium leading-5 rounded-[10px] text-sm px-3 py-2 focus:outline-none">
+            <svg class="h-4 w-4 me-1.5" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.00023 16.5C13.1425 16.5 16.5005 13.1421 16.5005 9C16.5005 4.85786 13.1425 1.5 9.00023 1.5C4.85797 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85797 16.5 9.00023 16.5Z"
+                fill="white" />
+              <path d="M8.67548 8.99996H16.5012C16.5012 8.32308 16.4109 7.66735 16.2428 7.04358H8.67548V8.99996Z"
+                fill="#D80027" />
+              <path d="M8.67548 5.08712H15.4004C14.9413 4.338 14.3543 3.67585 13.6699 3.13074H8.67548V5.08712Z"
+                fill="#D80027" />
+              <path
+                d="M9.0005 16.5001C10.7655 16.5001 12.3878 15.89 13.6689 14.8698H4.33209C5.61318 15.89 7.23548 16.5001 9.0005 16.5001Z"
+                fill="#D80027" />
+              <path
+                d="M2.60125 12.9132H15.4C15.7686 12.3118 16.0545 11.6543 16.2425 10.9567H1.75879C1.94679 11.6543 2.23265 12.3118 2.60125 12.9132Z"
+                fill="#D80027" />
+              <path
+                d="M4.97397 2.67114H5.65741L5.0217 3.13297L5.26453 3.88024L4.62884 3.41841L3.99316 3.88024L4.20292 3.23468C3.6432 3.7009 3.15262 4.24713 2.74834 4.85575H2.96732L2.56266 5.14972C2.49962 5.25489 2.43915 5.36173 2.38121 5.47015L2.57444 6.06485L2.21393 5.80293C2.12432 5.99279 2.04235 6.18692 1.96867 6.3851L2.18156 7.04036H2.96732L2.33161 7.50219L2.57444 8.24947L1.93876 7.78764L1.55798 8.0643C1.51986 8.37066 1.5 8.6827 1.5 8.99941H8.99964C8.99964 4.85763 8.99964 4.36934 8.99964 1.5C7.51811 1.5 6.13703 1.92975 4.97397 2.67114ZM5.26453 8.24947L4.62884 7.78764L3.99316 8.24947L4.23599 7.50219L3.60028 7.04036H4.38604L4.62884 6.29309L4.87165 7.04036H5.65741L5.0217 7.50219L5.26453 8.24947ZM5.0217 5.31758L5.26453 6.06485L4.62884 5.60303L3.99316 6.06485L4.23599 5.31758L3.60028 4.85575H4.38604L4.62884 4.10848L4.87165 4.85575H5.65741L5.0217 5.31758ZM7.95461 8.24947L7.31893 7.78764L6.68325 8.24947L6.92608 7.50219L6.29037 7.04036H7.07613L7.31893 6.29309L7.56173 7.04036H8.34749L7.71178 7.50219L7.95461 8.24947ZM7.71178 5.31758L7.95461 6.06485L7.31893 5.60303L6.68325 6.06485L6.92608 5.31758L6.29037 4.85575H7.07613L7.31893 4.10848L7.56173 4.85575H8.34749L7.71178 5.31758ZM7.71178 3.13297L7.95461 3.88024L7.31893 3.41841L6.68325 3.88024L6.92608 3.13297L6.29037 2.67114H7.07613L7.31893 1.92386L7.56173 2.67114H8.34749L7.71178 3.13297Z"
+                fill="#1A47B8" />
+            </svg>
+            English (US)
+          </button>
+          <!-- Dropdown -->
+          <div class="dark:text-gray-200 z-50 hidden bg-neutral-primary-medium rounded-[10px] shadow-lg w-44"
+            id="language-dropdown-menu">
+            <ul class="p-2 text-sm text-body bg-gray-300 dark:bg-slate-700 rounded-[10px] font-medium" role="none">
+              <li>
+                <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading hover:scale-110 ease-in-out rounded" role="menuitem">
+                  <div class="inline-flex items-center">
+                    <svg class="h-4 w-4 me-1.5" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.00023 16.5C13.1425 16.5 16.5005 13.1421 16.5005 9C16.5005 4.85786 13.1425 1.5 9.00023 1.5C4.85797 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85797 16.5 9.00023 16.5Z"
+                        fill="white" />
+                      <path d="M8.67548 8.99996H16.5012C16.5012 8.32308 16.4109 7.66735 16.2428 7.04358H8.67548V8.99996Z"
+                        fill="#D80027" />
+                      <path d="M8.67548 5.08712H15.4004C14.9413 4.338 14.3543 3.67585 13.6699 3.13074H8.67548V5.08712Z"
+                        fill="#D80027" />
+                      <path
+                        d="M9.0005 16.5001C10.7655 16.5001 12.3878 15.89 13.6689 14.8698H4.33209C5.61318 15.89 7.23548 16.5001 9.0005 16.5001Z"
+                        fill="#D80027" />
+                      <path
+                        d="M2.60125 12.9132H15.4C15.7686 12.3118 16.0545 11.6543 16.2425 10.9567H1.75879C1.94679 11.6543 2.23265 12.3118 2.60125 12.9132Z"
+                        fill="#D80027" />
+                      <path
+                        d="M4.97397 2.67114H5.65741L5.0217 3.13297L5.26453 3.88024L4.62884 3.41841L3.99316 3.88024L4.20292 3.23468C3.6432 3.7009 3.15262 4.24713 2.74834 4.85575H2.96732L2.56266 5.14972C2.49962 5.25489 2.43915 5.36173 2.38121 5.47015L2.57444 6.06485L2.21393 5.80293C2.12432 5.99279 2.04235 6.18692 1.96867 6.3851L2.18156 7.04036H2.96732L2.33161 7.50219L2.57444 8.24947L1.93876 7.78764L1.55798 8.0643C1.51986 8.37066 1.5 8.6827 1.5 8.99941H8.99964C8.99964 4.85763 8.99964 4.36934 8.99964 1.5C7.51811 1.5 6.13703 1.92975 4.97397 2.67114ZM5.26453 8.24947L4.62884 7.78764L3.99316 8.24947L4.23599 7.50219L3.60028 7.04036H4.38604L4.62884 6.29309L4.87165 7.04036H5.65741L5.0217 7.50219L5.26453 8.24947ZM5.0217 5.31758L5.26453 6.06485L4.62884 5.60303L3.99316 6.06485L4.23599 5.31758L3.60028 4.85575H4.38604L4.62884 4.10848L4.87165 4.85575H5.65741L5.0217 5.31758ZM7.95461 8.24947L7.31893 7.78764L6.68325 8.24947L6.92608 7.50219L6.29037 7.04036H7.07613L7.31893 6.29309L7.56173 7.04036H8.34749L7.71178 7.50219L7.95461 8.24947ZM7.71178 5.31758L7.95461 6.06485L7.31893 5.60303L6.68325 6.06485L6.92608 5.31758L6.29037 4.85575H7.07613L7.31893 4.10848L7.56173 4.85575H8.34749L7.71178 5.31758ZM7.71178 3.13297L7.95461 3.88024L7.31893 3.41841L6.68325 3.88024L6.92608 3.13297L6.29037 2.67114H7.07613L7.31893 1.92386L7.56173 2.67114H8.34749L7.71178 3.13297Z"
+                        fill="#1A47B8" />
+                    </svg>
+                    English (US)
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading hover:scale-110 ease-in-out rounded" role="menuitem">
+                  <div class="inline-flex items-center">
+                    <svg class="h-4 w-4 me-1.5" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1.96631 11.6087C3.02601 14.4647 5.77508 16.5 8.99981 16.5C12.2245 16.5 14.9736 14.4647 16.0333 11.6087L8.99981 10.9565L1.96631 11.6087Z"
+                        fill="#FFDA44" />
+                      <path
+                        d="M8.99981 1.5C5.77508 1.5 3.02601 3.53531 1.96631 6.39132L8.99981 7.04347L16.0333 6.39129C14.9736 3.53531 12.2245 1.5 8.99981 1.5Z"
+                        fill="black" />
+                      <path
+                        d="M1.96649 6.39136C1.66503 7.20385 1.5 8.08264 1.5 9.00004C1.5 9.91744 1.66503 10.7962 1.96649 11.6087H16.0335C16.335 10.7962 16.5 9.91744 16.5 9.00004C16.5 8.08264 16.335 7.20385 16.0335 6.39136H1.96649Z"
+                        fill="#D80027" />
+                    </svg>
+                    Deutsch
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading hover:scale-110 ease-in-out rounded" role="menuitem">
+                  <div class="inline-flex items-center">
+                    <svg class="h-4 w-4 me-1.5" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z"
+                        fill="white" />
+                      <path
+                        d="M16.5012 9.00018C16.5012 5.77544 14.4659 3.02637 11.6099 1.96667V16.0337C14.4659 14.974 16.5012 12.2249 16.5012 9.00018Z"
+                        fill="#D80027" />
+                      <path
+                        d="M1.5 8.99994C1.5 12.2247 3.53531 14.9737 6.39132 16.0334V1.96643C3.53531 3.02613 1.5 5.7752 1.5 8.99994Z"
+                        fill="#249F58" />
+                    </svg>
+                    Italiano
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading hover:scale-110 ease-in-out rounded" role="menuitem">
+                  <div class="inline-flex items-center">
+                    <svg class="h-4 w-4 me-1.5" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z"
+                        fill="#D80027" />
+                      <path
+                        d="M5.60449 6.06458L6.25195 8.05676H8.34668L6.65332 9.29016L7.30078 11.2823L5.60449 10.0519L3.9082 11.2823L4.55859 9.29016L2.8623 8.05676H4.95703L5.60449 6.06458Z"
+                        fill="#FFDA44" />
+                      <path
+                        d="M10.3906 13.1162L9.89551 12.5068L9.16309 12.791L9.58789 12.1318L9.09277 11.5195L9.85156 11.7217L10.2793 11.0625L10.3203 11.8477L11.082 12.0498L10.3467 12.3311L10.3906 13.1162Z"
+                        fill="#FFDA44" />
+                      <path
+                        d="M11.375 11.3291L11.6094 10.5791L10.9678 10.125L11.7529 10.1133L11.9844 9.36328L12.2393 10.1074L13.0244 10.0986L12.3945 10.5674L12.6465 11.3115L12.0049 10.8574L11.375 11.3291Z"
+                        fill="#FFDA44" />
+                      <path
+                        d="M12.7041 7.00488L12.3584 7.71094L12.9209 8.25879L12.1445 8.14746L11.7988 8.85059L11.6641 8.07715L10.8848 7.96582L11.582 7.59961L11.4473 6.82324L12.0098 7.37109L12.7041 7.00488Z"
+                        fill="#FFDA44" />
+                      <path
+                        d="M10.4126 4.86621L10.354 5.64844L11.0835 5.94434L10.3188 6.13184L10.2632 6.91699L9.8501 6.24902L9.08545 6.43652L9.59229 5.83594L9.17627 5.1709L9.90576 5.4668L10.4126 4.86621Z"
+                        fill="#FFDA44" />
+                    </svg>
+                    中文 (繁體)
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button data-collapse-toggle="navbar-language" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-[10px] md:hidden hover:bg-neutral-secondary-soft hover:text-heading hover:scale-110 ease-in-out focus:outline-none dark:text-gray-200"
+            aria-controls="navbar-language" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+              viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
+            </svg>
+          </button>
+        </div>
+        <div class="dark:text-gray-200 items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
+          <ul
+            class="font-medium flex flex-col items-center p-4 md:p-0 mt-4 border border-default rounded-[10px] bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+            <li>
+              <a href="#" class="block py-2 px-3 text-heading bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0 hover:scale-110 ease-in-out" aria-current="page">الرئيسية</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:scale-110 ease-in-out">المسارات التعليمية </a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:scale-110 ease-in-out">خدماتنا</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:scale-110 ease-in-out">حول الاكادمية</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:scale-110 ease-in-out">أتصل بنا</a>
+            </li>
+            <li class="pr-2">
+              <button id="theme-toggle" type="button" class="text-black dark:text-gray-200 hover:scale-125 ease-in-out rounded-lg text-sm p-2.5">
+                <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end nav -->
+
+    <!-- start hero section -->
+    <section class="hero pb-10 pt-40" style="background-image: url('./asstes/images/images (5).jfif'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+      <div class="max-w-5xl pb-7  mx-auto flex md:flex-row relative">
+        <div class="absolute w-full h-full rounded-2xl bg-[#09090bbe]"></div>
+        <div class="hero-info z-10 px-9 w-full flex flex-col justify-center">
+          <h1 class="text-blue-500 text-4xl text-center md:text-right font-bold leading-16">أكاديمية كوديك</h1>
+          <h2 class="text-red-500 text-2xl md:text-3xl text-center md:text-right font-bold leading-12">تعلم البرمجة من الصفر حتى الاحتراف</h2>
+          <p class="w-full md:w-[80%] leading-9 text-center md:text-right font-semibold text-white">تهدف أكاديمية إلى تعليم البرمجة باللغة العربية وإثراء المحتوى البرمجي العربي عبر توفير دورات وكتب ودروس عالية الجودة من متخصصين في المجال، بالإضافة إلى توفير قسم للأسئلة والأجوبة للإجابة على أي سؤال يواجه المتعلم خلال رحلته التعليمية لتكون معه وتؤهله حتى دخول سوق العمل.</p>
+          <div class="mt-3 flex justify-center md:justify-start gap-4">
+            <a href="" class="btn">تعلم الان</a>
+            <a href="" class="btn">اشترك معا</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end hero section -->
+    
+    <!-- start Features section -->
+    <section class="feature pt-6 pb-10 dark:bg-slate-900">
+      <h2 class="text-center text-2xl md:text-4xl dark:text-gray-200 dark:text-gray-200 text-blue-500 font-bold mb-4">الأكاديمية في أرقام</h2>
+      <p class="text-center dark:text-white w-[70%] mx-auto">أرقام تعكس حجم المحتوى، تنوّع المسارات، وثقة مئات الآلاف من المتعلمين في أكاديمية حسوب</p>
+      <div class="boxes mx-auto mt-6 p-3 max-w-5xl gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div
+          class="box mb-1 py-2 text-center border rounded-[10px] cursor-pointer bg-gray-100 dark:bg-slate-700 transition-all ease-in-out/ hover:translate-1"
+          style="box-shadow: 1px 1px 5px red , -1px -1px 5px blue;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-pause-circle inline mb-2 text-slate-800 dark:text-gray-200"
+            viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+            <path
+              d="M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0z" />
+          </svg>
+        
+          <h3 class="text-2xl font-bold dark:text-white mb-2.5">+650 ساعة فيديو</h3>
+          <p class="dark:text-gray-200">في 80 مسار تعليمي في 9 دورات شاملة</p>
+        </div>
+        
+        <div
+          class="box mb-1 py-2 text-center border rounded-[10px] cursor-pointer bg-gray-100 dark:bg-slate-700 transition-all ease-in-out/ hover:translate-1"
+          style="box-shadow: 1px 1px 5px red , -1px -1px 5px blue;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-book inline mb-2 text-slate-800 dark:text-gray-200"
+            viewBox="0 0 16 16">
+            <path
+              d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+          </svg>
+          <h3 class="text-2xl font-bold dark:text-white mb-2.5">+35 كتابًا</h3>
+          <p class="dark:text-gray-200">في مختلف المجالات متاح للتنزيل مجانًا.</p>
+        </div>
+        
+        <div
+          class="box mb-1 py-2 text-center border rounded-[10px] cursor-pointer bg-gray-100 dark:bg-slate-700 transition-all ease-in-out/ hover:translate-1"
+          style="box-shadow: 1px 1px 5px red , -1px -1px 5px blue;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+            class="bi bi-person-check-fill inline mb-2 text-slate-800 dark:text-gray-200" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0" />
+            <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+          </svg>
+          <h3 class="text-2xl font-bold dark:text-white mb-2.5">+250,000 طالب</h3>
+          <p class="dark:text-gray-200"> طالب مشترك في أكاديمية حسوب</p>
+        </div>
+        
+        <div
+          class="box mb-1 py-2 text-center border rounded-[10px] cursor-pointer bg-gray-100 dark:bg-slate-700 transition-all ease-in-out/ hover:translate-1"
+          style="box-shadow: 1px 1px 5px red , -1px -1px 5px blue;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+            class="mx-1.5 bi bi-newspaper inline mb-2 text-slate-800 dark:text-gray-200" viewBox="0 0 16 16">
+            <path
+              d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z" />
+            <path
+              d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z" />
+          </svg>
+          <h3 class="text-2xl font-bold dark:text-white mb-2.5">+7,500 مقالة</h3>
+          <p class="dark:text-gray-200">نشرناها في البرمجة ومختلف الأقسام.</p>
+        </div>
+        
+      </div>
+    </section>
+    <!-- end Features section -->
+
+    <!-- start gategore section -->
+    <section class="pb-10 pt-7 bg-gray-100 dark:bg-slate-700">
+      <h2 class="text-blue-500 text-2xl md:text-4xl dark:text-gray-200 text-center font-bold leading-16">التقنيات التي ستتقنها معنا</h2>
+      <p class="w-full mx-auto md:w-[80%] leading-9 text-center dark:text-white"> نركز على تعليم أقوى لغات البرمجة وأطر العمل الأكثر طلباً في سوق العمل العالمي.</p>
+      <div class="mt-10 p-3 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3">
+        <div class="gategore-cours p-1 mt-1.5 flex justify-between items-center bg-gray-300 dark:bg-slate-900 rounded-xl cursor-pointer transition-all ease-in-out hover:translate-2.5">
+          <h3 class="text-xl font-bold dark:text-gray-200">لغة Python</h3>
+          <img class="w-[70px] h-[70px] rounded-full object-cover" src="asstes/images/corce/python.jfif" alt="">
+        </div> 
+        
+        <div class="gategore-cours p-1 mt-1.5 flex justify-between items-center bg-gray-300 dark:bg-slate-900 rounded-xl cursor-pointer transition-all ease-in-out hover:translate-2.5">
+          <h3 class="text-xl font-bold dark:text-gray-200">لغة JavaScript</h3>
+          <img class="w-[70px] h-[70px] rounded-full object-cover" src="asstes/images/corce/1771955486236971-0.webp" alt="">
+        </div> 
+
+        <div class="gategore-cours p-1 mt-1.5 flex justify-between items-center bg-gray-300 dark:bg-slate-900 rounded-xl cursor-pointer transition-all ease-in-out hover:translate-2.5">
+          <h3 class="text-xl font-bold dark:text-gray-200">لغة PHP & Laravel</h3>
+          <img class="w-[70px] h-[70px] rounded-full object-cover" src="asstes/images/corce/PHP & Laravel.jpg" alt="">
+        </div> 
+
+        <div class="gategore-cours p-1 mt-1.5 flex justify-between items-center bg-gray-300 dark:bg-slate-900 rounded-xl cursor-pointer transition-all ease-in-out hover:translate-2.5">
+          <h3 class="text-xl font-bold dark:text-gray-200">تقنية Flutter</h3>
+          <img class="w-[70px] h-[70px] rounded-full object-cover" src="asstes/images/corce/fluter1.jpg" alt="">
+        </div> 
+
+        <div class="gategore-cours p-1 mt-1.5 flex justify-between items-center bg-gray-300 dark:bg-slate-900 rounded-xl cursor-pointer transition-all ease-in-out hover:translate-2.5">
+          <h3 class="text-xl font-bold dark:text-gray-200">لغة Java</h3>
+          <img class="w-[70px] h-[70px] rounded-full object-cover" src="asstes/images/corce/java.png" alt="">
+        </div> 
+
+        <div class="gategore-cours p-1 mt-1.5 flex justify-between items-center bg-gray-300 dark:bg-slate-900 rounded-xl cursor-pointer transition-all ease-in-out hover:translate-2.5">
+          <h3 class="text-xl font-bold dark:text-gray-200">قواعد بيانات SQL</h3>
+          <img class="w-[70px] h-[70px] rounded-full object-cover" src="asstes/images/corce/sql.webp" alt="">
+        </div> 
+
+        <div class="gategore-cours p-1 mt-1.5 flex justify-between items-center bg-gray-300 dark:bg-slate-900 rounded-xl cursor-pointer transition-all ease-in-out hover:translate-2.5">
+          <h3 class="text-xl font-bold dark:text-gray-200">إطار عمل React</h3>
+          <img class="w-[70px] h-[70px] rounded-full object-cover" src="asstes/images/corce/React.jfif" alt="">
+        </div> 
+
+        <div class="gategore-cours p-1 mt-1.5 flex justify-between items-center bg-gray-300 dark:bg-slate-900 rounded-xl cursor-pointer transition-all ease-in-out hover:translate-2.5">
+          <h3 class="text-xl font-bold dark:text-gray-200">تقنيات الـ Cloud</h3>
+          <img class="w-[70px] h-[70px] rounded-full object-cover" src="asstes/images/corce/Cloud.png" alt="">
+        </div> 
+        
+      </div>
+    </section>
+    <!-- end gategore section -->
+
+    <!-- start About section -->
+    <section class="py-[60px] dark:bg-slate-900">
+      <div class="max-w-5xl mx-auto grid md:grid-cols-2">
+        <div class="About-right">
+          <h2 class="text-2xl md:text-4xl dark:text-gray-200 text-center md:text-right text-blue-500 font-bold mb-4">ميزات دورات أكاديمية حسوب
+          </h2>
+          <p class="w-[90%] leading-7 pb-3 mx-auto md:mr-0 text-center md:text-right dark:text-gray-300">نقدّم لك مزايا
+            تعليمية تساعدك على تطوير مهارات مطلوبة في سوق العمل، والاستعداد بثقة للفرص الوظيفية</p>
+          <ul class="flex flex-col items-center md:items-start">
+            <li class="w-[90%] md:w-[70%] bg-gray-200 dark:bg-slate-700 rounded-[10px] p-2 mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-graph-up-arrow inline text-[#00D2FF] ml-2"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5" />
+              </svg>
+              <span class="text-xl dark:text-gray-200">تبدأ معك من الصفر إلى الاحتراف</span>
+            </li>
+            <li class="w-[90%] md:w-[70%] bg-gray-200 dark:bg-slate-700 rounded-[10px] p-2 mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-people-fill inline text-[#00D2FF] ml-2"
+                viewBox="0 0 16 16">
+                <path
+                  d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+              </svg>
+              <span class="text-xl dark:text-gray-200">لست وحدك في رحلة التعلم</span>
+            </li>
+            <li class="w-[90%] md:w-[70%] bg-gray-200 dark:bg-slate-700 rounded-[10px] p-2 mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-laptop inline text-[#00D2FF] ml-2" viewBox="0 0 16 16">
+                <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"/>
+              </svg>
+              <span class="text-xl dark:text-gray-200">خبرة عملية أثناء التعلّم</span>
+            </li>
+            <li class="w-[90%] md:w-[70%] bg-gray-200 dark:bg-slate-700 rounded-[10px] p-2 mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-briefcase inline text-[#00D2FF] ml-2"
+                viewBox="0 0 16 16">
+                <path
+                  d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5" />
+              </svg>
+              <span class="text-xl dark:text-gray-200">تأهيلك لدخول سوق العمل</span>
+            </li>
+            <li class="w-[90%] md:w-[70%] bg-gray-200 dark:bg-slate-700 rounded-[10px] p-2 mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="mx-1.5 bi bi-translate inline text-[#00D2FF] ml-2"
+                viewBox="0 0 16 16">
+                <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z" />
+                <path
+                  d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31" />
+              </svg>
+              <span class="text-xl dark:text-gray-200">الشرح بالعربية بلغة سهلة وبسيطة</span>
+            </li>
+          </ul>
+          <div class="flex justify-center md:justify-start">
+            <button class="btn m-2 dark:bg-blue-400 dark:hover:bg-blue-500">تعرف المزيد</button>
+          </div>
+        </div>
+        <div class="About-left hidden md:grid grid-cols-2 ">
+          <img class="w-[400px] mt-[125px]" src="asstes/images/تنزيل.jfif" alt="">
+          <img class="w-[250px]" src="asstes/images/images (1).jfif" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- end About section -->
+
+    <!-- start courses section -->
+    <section class=" all-courses bg-gray-200 dark:bg-slate-700 py-7">
+      <h2 class="text-blue-500 text-2xl md:text-4xl dark:text-gray-200 text-center font-bold leading-16">دورات أكاديمية حسوب</h2>
+      <p class="w-full leading-9 text-center dark:text-white">دورات شاملة لتعلم البرمجة تعتمد على التطبيق العملي وبناء مشاريع حقيقية، تبدأ معك من الصفر وتأخذك خطوة بخطوة حتى الاحتراف.</p>
+      <!-- Slider main container -->
+      <div class="swiper relative max-w-5xl mx-auto">
+        <!-- Additional required wrapper -->
+        <div class="courses swiper-wrapper mt-8">
+          <div class="course swiper-slide relative bg-white dark:bg-slate-900 rounded-[12px] overflow-hidden hover:translate-1 transition-all ease-in-out cursor-pointer">
+            <div class="absolute top-[5px] right-[5px] text-white bg-red-500 dark:bg-blue-400 px-2 py-1 rounded-md">Frontend
+            </div>
+            <div class="course-img w-full h-[200px] ">
+              <img class="w-full h-full object-cover" src="asstes/images/corce/front.jfif" alt="">
+            </div>
+            <div class="course-info p-2">
+              <h3 class="my-3 text-xl text-slate-700 dark:text-gray-100 font-bold text-center"> تطوير الواجهات</h3>
+              <p class="text-slate-700 dark:text-gray-200 text-center ">تعلم HTML, CSS, JavaScript وابنِ مواقع تفاعلية جذابة
+                من الصفر. ستمتلك القدرة على تحويل أي تصميم إلى واقع رقمي.</p>
+              <div class="price flex justify-between text-xl text-slate-700 dark:text-gray-200 p-2">
+                <div>
+                  <span>السعر السابق:</span>
+                  <span class="line-through">250$</span>
+                </div>
+                <span>150$</span>
+              </div>
+              <a href="sengl-post.html"
+                class="text-white block p-2 text-center bg-red-500 dark:bg-blue-400 w-full py-2 px-5 mt-1 rounded-[8px] hover:bg-red-600 dark:hover:bg-blue-500 cursor-pointer">اشترك
+                الان</a>
+            </div>
+          </div>
+          <div
+            class="course swiper-slide relative bg-white dark:bg-slate-900 rounded-[12px] overflow-hidden hover:translate-1 transition-all ease-in-out cursor-pointer">
+            <div class="absolute top-[5px] right-[5px] text-white bg-red-500 dark:bg-blue-400 px-2 py-1 rounded-md">Flutter
+            </div>
+            <div class="course-img w-full h-[200px] ">
+              <img class="w-full h-full object-cover" src="asstes/images/corce/f.jfif" alt="">
+            </div>
+            <div class="course-info p-2">
+              <h3 class="my-3 text-xl text-slate-700 dark:text-gray-100 font-bold text-center">تطوير تطبيقات الموبايل</h3>
+              <p class="text-slate-700 dark:text-gray-200 text-center ">ابنِ تطبيقات تعمل على Android و iOS بكود واحد باستخدام
+                Flutter. تعلم كيفية رفع تطبيقك على المتاجر العالمية باحترافية.</p>
+              <div class="price flex justify-between text-xl text-slate-700 dark:text-gray-200 p-2">
+                <div>
+                  <span>السعر السابق</span>
+                  <span class="line-through">300$</span>
+                </div>
+                <span>200$</span>
+              </div>
+              <button
+                class="text-white bg-red-500 dark:bg-blue-400 w-full py-2 px-5 mt-1 rounded-[8px] hover:bg-red-600 dark:hover:bg-blue-500 cursor-pointer p-2">اشترك
+                الان</button>
+            </div>
+          </div>
+          <div
+            class="course swiper-slide relative bg-white dark:bg-slate-900 rounded-[12px] overflow-hidden hover:translate-1 transition-all ease-in-out cursor-pointer">
+            <div class="absolute top-[5px] right-[5px] text-white bg-red-500 dark:bg-blue-400 px-2 py-1 rounded-md">python
+            </div>
+            <div class="course-img w-full h-[200px] object-cover">
+              <img class="w-full h-full" src="asstes/images/corce/images.jfif" alt="">
+            </div>
+            <div class="course-info p-2">
+              <h3 class="my-3 text-xl text-slate-700 dark:text-gray-100 font-bold text-center">مسار تعلم بايثون </h3>
+              <p class="text-slate-700 dark:text-gray-200 text-center ">لغة المستقبل بين يديك. تعلم البرمجة باستخدام Python
+                وابدأ رحلتك في عالم تحليل البيانات والذكاء الاصطناعي بخطوات عملية.</p>
+              <div class="price flex justify-between text-xl text-slate-700 dark:text-gray-200 p-2">
+                <div>
+                  <span>السعر السابق</span>
+                  <span class="line-through">200$</span>
+                </div>
+                <span>100$</span>
+              </div>
+              <button
+                class="text-white bg-red-500 dark:bg-blue-400 w-full py-2 px-5 mt-1 rounded-[8px] hover:bg-red-600 dark:hover:bg-blue-500 cursor-pointer p-2">اشترك
+                الان</button>
+            </div>
+          </div>
+          <div
+            class="course swiper-slide relative bg-white dark:bg-slate-900 rounded-[12px] overflow-hidden hover:translate-1 transition-all ease-in-out cursor-pointer">
+            <div class="absolute top-[5px] right-[5px] text-white bg-red-500 dark:bg-blue-400 px-2 py-1 rounded-md">Backend
+            </div>
+            <div class="course-img w-full h-[200px] object-cover">
+              <img class="w-full h-full" src="asstes/images/corce/back.jfif" alt="">
+            </div>
+            <div class="course-info p-2">
+              <h3 class="my-3 text-xl text-slate-700 dark:text-gray-100 font-bold text-center"> البرمجة الخلفية</h3>
+              <p class="text-slate-700 dark:text-gray-200 text-center ">تعلم بناء عقل الموقع، إدارة قواعد البيانات، وتأمين
+                السيرفرات باستخدام Node.js. كن المبرمج الذي يدير العمليات المعقدة</p>
+              <div class="price flex justify-between text-xl text-slate-700 dark:text-gray-200 p-2">
+                <div>
+                  <span>السعر السابق</span>
+                  <span class="line-through">250$</span>
+                </div>
+                <span>200$</span>
+              </div>
+              <button
+                class="text-white bg-red-500 dark:bg-blue-400 w-full py-2 px-5 mt-1 rounded-[8px] hover:bg-red-600 dark:hover:bg-blue-500 cursor-pointer p-2">اشترك
+                الان</button>
+            </div>
+          </div>
+          <div
+            class="course swiper-slide relative bg-white dark:bg-slate-900 rounded-[12px] overflow-hidden hover:translate-1 transition-all ease-in-out cursor-pointer">
+            <div class="absolute top-[5px] right-[5px] text-white bg-red-500 dark:bg-blue-400 px-2 py-1 rounded-md">Cyber
+              Security</div>
+            <div class="course-img w-full h-[200px] object-cover">
+              <img class="w-full h-full" src="asstes/images/corce/cyber.jfif" alt="">
+            </div>
+            <div class="course-info p-2">
+              <h3 class="my-3 text-xl text-slate-700 dark:text-gray-100 font-bold text-center">لأمن السيبراني</h3>
+              <p class="text-slate-700 dark:text-gray-200 text-center ">احمِ الأنظمة واكتشف الثغرات. تعلم فنون الأمن الرقمي
+                وكيفية التصدي للهجمات الإلكترونية لتصبح خبيراً مطلوباً في السوق.</p>
+              <div class="price flex justify-between text-xl text-slate-700 dark:text-gray-200 p-2">
+                <div>
+                  <span>السعر السابق</span>
+                  <span class="line-through">400$</span>
+                </div>
+                <span>300$</span>
+              </div>
+              <button
+                class="text-white bg-red-500 dark:bg-blue-400 w-full py-2 px-5 mt-1 rounded-[8px] hover:bg-red-600 dark:hover:bg-blue-500 cursor-pointer p-2">اشترك
+                الان</button>
+            </div>
+          </div>
+          <div
+            class="course swiper-slide relative bg-white dark:bg-slate-900 rounded-[12px] overflow-hidden hover:translate-1 transition-all ease-in-out cursor-pointer">
+            <div class="absolute top-[5px] right-[5px] text-white bg-red-500 dark:bg-blue-400 px-2 py-1 rounded-md">Game Dev
+            </div>
+            <div class="course-img w-full h-[200px] object-cover">
+              <img class="w-full h-full" src="asstes/images/corce/game.jfif" alt="">
+            </div>
+            <div class="course-info p-2">
+              <h3 class="my-3 text-xl text-slate-700 dark:text-gray-100 font-bold text-center">تطوير الألعاب</h3>
+              <p class="text-slate-700 dark:text-gray-200 text-center ">حوّل شغفك بالألعاب إلى مهنة. تعلم بناء العوالم
+                الثلاثية الأبعاد وبرمجة شخصياتك الخاصة من الصفر وحتى النشر</p>
+              <div class="price flex justify-between text-xl text-slate-700 dark:text-gray-200 p-2">
+                <div>
+                  <span>السعر السابق.</span>
+                  <span class="line-through">250$</span>
+                </div>
+                <span>200$</span>
+              </div>
+              <button
+                class="text-white bg-red-500 dark:bg-blue-400 w-full py-2 px-5 mt-1 rounded-[8px] hover:bg-red-600 dark:hover:bg-blue-500 cursor-pointer p-2">اشترك
+                الان</button>
+            </div>
+          </div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="btn-controls flex justify-between absolute w-full top-[50%] z-20">
+          <div class="btn-next w-[30px] h-[30px] rounded-full bg-gray-200 dark:bg-slate-700 dark:text-gray-200 flex items-center justify-center cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right inline" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"/>
+              <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"/>
+            </svg>
+          </div>
+          <div class="btn-prev w-[30px] h-[30px] rounded-full bg-gray-200 dark:bg-slate-700 dark:text-gray-200 flex items-center justify-center cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-left inline" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+              <path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+            </svg>
+          </div>
+      
+        </div>
+      </div>
+    </section>
+    <!-- end courses section -->
+
+    <!-- start Faq section -->
+    <section class="faq py-[40px] dark:bg-slate-900">
+        <h2 class="text-blue-500 text-2xl md:text-4xl dark:text-gray-200 text-center font-bold leading-16">لماذا تختار أكاديميتنا لتعلم البرمجة؟</h2>
+        <p class="w-[80%] leading-9 text-center dark:text-white mx-auto">إليك أكثر الأسئلة شيوعاً التي قد تدور في ذهنك قبل بدء رحلتك معنا.</p>
+        <div class="min-faq  max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
+          <div class="faq-info py-4 px-5 md:px-0">
+            <div id="accordion-color" data-accordion="collapse"
+              class="mb-3 bg-gray-100 dark:bg-slate-600 rounded-xl overflow-hidden hover:bg-gray-100 hover:dark:bg-slate-700" style="box-shadow: 1px 1px 5px red , -1px -1px 5px blue; ">
+              <h2 id="accordion-color-heading-1" class="dark:text-gray-200">
+                <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body dark:text-white rounded-t-base  hover:text-fg-brand hover:bg-brand-softer gap-3"
+                  data-accordion-target="#accordion-color-body-1" aria-expanded="true" aria-controls="accordion-color-body-1">
+                  <span>هل أحتاج إلى خلفية تقنية أو شهادة جامعية للبدء؟</span>
+                  <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m5 15 7-7 7 7" />
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-color-body-1" class="hidden bg-white dark:bg-slate-800"
+                aria-labelledby="accordion-color-heading-1">
+                <div class="p-4 md:p-5">
+                  <p class="mb-2 text-body dark:text-gray-200" > أبداً، مساراتنا مصممة لتبدأ معك من الصفر المطلق. كل ما تحتاجه هو جهاز كمبيوتر وشغف للتعلم، ونحن سنتولى تعليمك الأساسيات وصولاً إلى الاحتراف.</p>
+                </div>
+              </div>
+            
+              <h2 id="accordion-color-heading-2" class="dark:text-gray-200">
+                <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body dark:text-white rounded-t-base  hover:text-fg-brand hover:bg-brand-softer gap-3"
+                  data-accordion-target="#accordion-color-body-2" aria-expanded="false" aria-controls="accordion-color-body-2">
+                  <span>. ماذا لو واجهت مشكلة في فهم كود معين أو "Bug" لم أعرف حله؟</span>
+                  <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m5 15 7-7 7 7" />
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-color-body-2" class="hidden bg-white dark:bg-slate-800"
+                aria-labelledby="accordion-color-heading-2">
+                <div class="p-4 md:p-5">
+                  <p class="mb-2 text-body dark:text-gray-200" >لن تكون وحيداً! لدينا مجتمع تفاعلي وفريق من المدربين الخبراء متاحين للإجابة على استفساراتك وتصحيح الكود الخاص بك وتوجيهك خطوة بخطوة.</p>
+                </div>
+              </div>
+            
+              <h2 id="accordion-color-heading-2" class="dark:text-gray-200">
+                <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body dark:text-white rounded-t-base  hover:text-fg-brand hover:bg-brand-softer gap-3"
+                  data-accordion-target="#accordion-color-body-2" aria-expanded="false" aria-controls="accordion-color-body-2">
+                  <span>هل المحتوى التعليمي محدث لمواكب سوق العمل في 2026؟</span>
+                  <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m5 15 7-7 7 7" />
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-color-body-2" class="hidden bg-white dark:bg-slate-800"
+                aria-labelledby="accordion-color-heading-2">
+                <div class="p-4 md:p-5">
+                  <p class="mb-2 text-body dark:text-gray-200" >نعم، يتم تحديث المناهج بشكل دوري لإضافة أحدث تقنيات البرمجة وأطر العمل (Frameworks) المطلوبة عالمياً، لضمان أنك تتعلم ما يحتاجه السوق فعلياً.</p>
+                </div>
+              </div>
+            
+              <h2 id="accordion-color-heading-3" class="dark:text-gray-200">
+                <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body dark:text-white rounded-t-base  hover:text-fg-brand hover:bg-brand-softer gap-3"
+                  data-accordion-target="#accordion-color-body-3" aria-expanded="false" aria-controls="accordion-color-body-3">
+                  <span>هل سأحصل على شهادة عند إتمام المسار؟</span>
+                  <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m5 15 7-7 7 7" />
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-color-body-3" class="hidden bg-white dark:bg-slate-800"
+                aria-labelledby="accordion-color-heading-3">
+                <div class="p-4 md:p-5">
+                  <p class="mb-2 text-body dark:text-gray-200" >بالتأكيد، ستحصل على شهادة إتمام معتمدة من الأكاديمية بعد إنهاء كافة المشاريع المطلوبة في المسار، وهي شهادة تعكس مهاراتك العملية التي اكتسبتها.</p>
+                </div>
+              </div>
+              
+            </div>
+          
+          </div>
+
+          <div class="faq-img md:flex justify-center md:justify-end mt-5 md:mt-0 hidden">
+            <img width="60%" src="asstes/images/images (3).jfif" alt="">
+          </div>
+        </div>
+    </section>
+    <!-- end Faq section -->
+
+    <!-- start Bolg section -->
+    <section class=" all-courses bg-gray-200 dark:bg-slate-700 py-7">
+      <h2 class="text-blue-500 text-2xl md:text-4xl dark:text-gray-200 text-center font-bold leading-16">احدث المقالات</h2>
+      <p class="mx-auto w-full md:w-[80%] leading-9 text-center dark:text-white">مقالات تقنية وتعليمية في عالم البرمجة والتكنولوجيا</p>
+      <div class="p-4 md:p-0 courses max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-3 lg:grid-cols-4 mt-8">
+        <div class="course relative bg-white dark:bg-slate-900 rounded-[12px] overflow-hidden hover:translate-1 transition-all ease-in-out cursor-pointer">
+          <div class="absolute top-[5px] right-[5px] text-white bg-red-500 dark:bg-blue-400 px-2 py-1 rounded-md">خارطة الطريق</div>
+          <div class="course-img w-full h-[200px] object-cover">
+            <img class="w-full h-full" src="asstes/images/images.jfif" alt="">
+          </div>         
+          <div class="course-info p-2">
+            <h3 class="my-3 text-xl text-slate-700 dark:text-gray-100 font-bold text-center"> كيف تبدأ تعلم البرمجة من الصفر في 2026؟</h3>
+            <p class="text-slate-700 dark:text-gray-200 text-center ">دليل شامل للمبتدئين يشرح الخطوات الأساسية، وكيف تختار لغة البرمجة الأولى المناسبة لأهدافك المهنية.</p>
+            <div class="auth p-2 flex justify-around text-xl text-slate-700 dark:text-gray-200 m-1">
+              <img class="rounded-full object-center" style="width: 50px; height: 50px;" src="asstes/images/hg.png" alt="">
+              <div>
+                <h3>م. أحمد خالد</h3>
+                <span class="text-[14px]">15 مارس 2026</span>
+              </div>
+            </div>
+            <a href="sengl-post copy.html" class="text-white block bg-red-500 dark:bg-blue-400 text-center py-2 px-5 mt-1 rounded-[8px] hover:bg-red-600 dark:hover:bg-blue-500 cursor-pointer">اقرأ المزيد</a>
+          </div>
+        </div>
+        <div class="course relative bg-white dark:bg-slate-900 rounded-[12px] overflow-hidden hover:translate-1 transition-all ease-in-out cursor-pointer">
+          <div class="absolute top-[5px] right-[5px] text-white bg-red-500 dark:bg-blue-400 px-2 py-1 rounded-md">لغات المستقبل</div>
+          <div class="course-img w-full h-[200px] object-cover">
+            <img class="w-full h-full" src="asstes/images/corce/images.jfif" alt="">
+          </div>  
+          <div class="course-info p-2">
+            <h3 class="my-3 text-xl text-slate-700 dark:text-gray-100 font-bold text-center">لماذا تعتبر لغة بايثون هي الأقوى حالياً؟</h3>
+            <p class="text-slate-700 dark:text-gray-200 text-center "> تحليل لأسباب تصدر بايثون لمجالات الذكاء الاصطناعي وعلوم البيانات، ولماذا يفضلها أصحاب الشركات.</p>
+            <div class="auth p-2 flex justify-around text-xl text-slate-700 dark:text-gray-200 m-1">
+              <img class="rounded-full object-center" style="width: 50px; height: 50px;" src="asstes/images/pngtree.png" alt="">
+              <div>
+                <h3> د.سارة المنصور</h3>
+                <span class="text-[14px]">10 مارس 2026</span>
+              </div>
+            </div>
+            <a href="sengl-post.html" class="text-white bg-red-500 dark:bg-blue-400 text-center block py-2 px-5 mt-1 rounded-[8px] hover:bg-red-600 dark:hover:bg-blue-500 cursor-pointer">اقرأ المزيد</a>
+          </div>
+        </div>       
+        <div class="course relative bg-white dark:bg-slate-900 rounded-[12px] overflow-hidden hover:translate-1 transition-all ease-in-out cursor-pointer">
+          <div class="absolute top-[5px] right-[5px] text-white bg-red-500 dark:bg-blue-400 px-2 py-1 rounded-md">نصائح تقنية</div>
+          <div class="course-img w-full h-[200px]">
+            <img class="w-full h-full object-cover" src="asstes/images/image.jfif" alt="">
+          </div> 
+          <div class="course-info p-2">
+            <h3 class="my-3 text-xl text-slate-700 dark:text-gray-100 font-bold text-center">5 أخطاء يقع فيها المبرمجون المبتدئون.</h3>
+            <p class="text-slate-700 dark:text-gray-200 text-center ">تعلم كيف تكتب كوداً نظيفاً (Clean Code) وتوفر ساعات من البحث عن الأخطاء البرمجية (Debugging).</p>
+            <div class="auth p-2 flex justify-around text-xl text-slate-700 dark:text-gray-200 m-1">
+              <img class="rounded-full object-center" style="width: 50px; height: 50px;" src="asstes/images/hf.png" alt="">
+              <div>
+                <h3>م. يوسف حسن</h3>
+                <span class="text-[14px]">5 مارس 2026</span>
+              </div>
+            </div>
+            <a href="sengl-post.html" class="text-white bg-red-500 dark:bg-blue-400 text-center block py-2 px-5 mt-1 rounded-[8px] hover:bg-red-600 dark:hover:bg-blue-500 cursor-pointer">اقرأ المزيد</a>
+          </div>
+        </div>       
+        <div class="course relative bg-white dark:bg-slate-900 rounded-[12px] overflow-hidden hover:translate-1 transition-all ease-in-out cursor-pointer">
+          <div class="absolute top-[5px] right-[5px] text-white bg-red-500 dark:bg-blue-400 px-2 py-1 rounded-md">سوق العمل</div>
+          <div class="course-img w-full h-[200px]">
+            <img class="w-full h-full object-cover" src="asstes/images/images (2).jfif" alt="">
+          </div>
+          <div class="course-info p-2">
+            <h3 class="my-3 text-xl text-slate-700 dark:text-gray-100 font-bold text-center">كيف تحصل على وظيفة برمجة عن بُعد براتب دولي؟</h3>
+            <p class="text-slate-700 dark:text-gray-200 text-center ">أسرار بناء معرض أعمال قوي يجذب الشركات العالمية وكيفية التسويق لنفسك كمبرمج محترف.</p>
+            <div class="auth flex justify-around text-xl text-slate-700 dark:text-gray-200 m-1 p-2">
+              <img class="rounded-full object-center" style="width: 50px; height: 50px;" src="asstes/images/h.png" alt="">
+              <div>
+                <h3>ليلى إبراهيم</h3>
+                <span class="text-[14px]">8 مارس 2026</span>
+              </div>
+            </div>
+            <a href="sengl-post.html" class="text-white bg-red-500 dark:bg-blue-400 text-center block py-2 px-5 mt-1 rounded-[8px] hover:bg-red-600 dark:hover:bg-blue-500 cursor-pointer">اقرأ المزيد</a>
+          </div>
+        </div>
+      </div>   
+    </section>
+    <!-- end Bolg section -->
+    
+    <section class="py-[40px] dark:bg-slate-900">
+      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 p-3 md:p-0">
+        <div>
+          <h2 class="text-center md:text-righttext-2xl text-2xl md:text-3xl font-bold text-blue-500 dark:text-gray-200 mb-5">اشترك بالنشرة البريدية</h2>
+          <p class=" mx-auto text-center md:text-right dark:text-gray-200 w-[90%]">كن أول من يحصل على أحدث المقالات والكورسات البرمجية مباشرة في بريدك</p>
+        </div>
+        <div class="news-form flex items-center">
+         <form action="" class=" flex w-full gap-2">
+          <input class="p-3 grow border border-gray-200 rounded-[8px] dark:placeholder:text-gray-200" type="email" placeholder=" بريدك الإلكتروني">
+          <button class="btn"> اشترك الآن </button>
+         </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- start footer -->
+    <footer class="relative bg-slate-700 border-[5px] border-t-red-500 dark:border-t-blue-500" style="background-image: url('./asstes/images/fotar.jfif'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+      <div class="absolute z-10 w-full h-full bg-[#09090b3f]"></div>
+      <div class=" max-w-5xl mx-auto">
+       <div class="relative z-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 p-3 pt-9">
+
+        <div class="f1-section">
+          <h3 class="text-xl text-gray-200 font-bold mb-5">أكاديمية كوديك</h3>
+          <p class="text-gray-200 leading-7 w-[80%]">تهدف أكاديمية إلى تعليم البرمجة باللغة العربية وإثراء المحتوى البرمجي العربي عبر توفير دورات وكتب ودروس عالية الجودة من متخصصين في المجال،</p>
+        </div>
+        
+        <div class="f2-section">
+          <h3 class="text-xl text-gray-200 font-bold mb-5">روابط سريعة</h3>
+          <ul class="flex flex-col gap-2">
+            <li><a class="text-gray-200 hover:text-gray-400" href="">الرئيسية</a></li>
+            <li><a class="text-gray-200 hover:text-gray-400" href="">المسارات التعليمية</a></li>
+            <li><a class="text-gray-200 hover:text-gray-400" href="">عن الأكاديمية</a></li>
+            <li><a class="text-gray-200 hover:text-gray-400" href="">تواصل معنا</a></li>
+          </ul>
+        </div>
+
+        <div class="f3-section">
+          <h3 class="text-xl text-gray-200 font-bold mb-5">مساراتنا الأشهر</h3>
+          <ul class="flex flex-col gap-2">
+            <li><a class="text-gray-200 hover:text-gray-400" href="">تطوير الويب (Frontend)</a></li>
+            <li><a class="text-gray-200 hover:text-gray-400" href="">البرمجيات الخلفية (Backend)</a></li>
+            <li><a class="text-gray-200 hover:text-gray-400" href="">برمجة تطبيقات الموبايل</a></li>
+            <li><a class="text-gray-200 hover:text-gray-400" href="">الأمن السيبراني</a></li>
+          </ul>
+        </div>
+
+        <div class="f4-section">
+          <h3 class="text-xl text-gray-200 font-bold mb-5"> انضم إلى عائلتنا التقنية</h3>
+          <form class="flex flex-col gap-3" action="">
+            <input class="p-3 grow border border-gray-200 rounded-[8px] placeholder:text-gray-200" type="email" placeholder=" بريدك الإلكتروني">
+            <button class="btn">اشترك الآن</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="relative z-20 py-[20px] flex md:flex justify-center md:justify-around border-t-1 border-amber-100 p-3">
+        <div class="text-gray-200">جميع الحقوق محفوظة لأكاديمية [اسم أكاديميتك] © 2026.</div>
+        <div class="text-gray-200">صُنع بكل شغف بواسطة مبرمجة فاطمة </div>
+      </div>
+     </div>
+
+    </footer>
+    <!-- end footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+    <script src="asstes/js/script.js"></script>
+  </body>
+
+</html>
